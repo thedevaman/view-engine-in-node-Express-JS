@@ -24,5 +24,11 @@ app.post('/submit-user',(req,res)=>{
 
 })
 
+app.get('/users',(re1,res)=>{
+    const users = ['test1','test2','test3','test4']
+    const islogin = false
+    res.render("users",{users:users,islogin:islogin})
+})
+
 
 app.listen(3200)
